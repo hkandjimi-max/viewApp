@@ -1,1 +1,20 @@
-<p>aboutus works!</p>
+<div class="container" style="padding-top: 4rem;">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let staff of peopleData;">
+          <div class="card">
+            <img [src]="staff.imgUrl" class="card-img-top" alt="Hollywood Sign on The Hill"/>
+            <div class="card-body">
+              <h5 class="card-title">{{staff.fullname}}</h5>
+              <h6 class="text-primary">{{staff.title}}</h6>
+              <p class="card-text fs-6">
+                {{staff.job_summary}}
+              </p>
+              <hr/>
+              <i class="fab fa-facebook fa-xs"></i><i class="fab fa-linkedin fa-xs"></i>
+              <i class="fab fa-twitter fa-xs"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+</div>
